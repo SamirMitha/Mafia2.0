@@ -12,7 +12,7 @@ function App() {
 
   const createRoom = async () => {
     try {
-      const response = await fetch('${API_URL}/api/create_room', {
+      const response = await fetch(`${API_URL}/api/create_room`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username })
@@ -33,7 +33,7 @@ function App() {
 
   const joinRoom = async () => {
     try {
-      const response = await fetch('${API_URL}/api/join_room', {
+      const response = await fetch(`${API_URL}/api/join_room`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, room_code: roomCode })
