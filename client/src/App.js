@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useState } from 'react';
 import './App.css';
 
@@ -11,7 +10,7 @@ function App() {
 
   const createRoom = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/create_room', {
+      const response = await fetch('https://mafia2-0.onrender.com/api/create_room', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username })
