@@ -5,7 +5,7 @@ import string
 import time
 
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": "https://mafia2-0.onrender.com"}})
+CORS(app, resources={r"/api/*": {"origins": "https://mafia2-6ey0.onrender.com"}})
 
 rooms = {}
 
@@ -68,4 +68,4 @@ def get_room(room_code):
     })
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True, port=5000)
