@@ -31,7 +31,7 @@ function App() {
 
   const joinRoom = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/join_room', {
+      const response = await fetch('https://mafia2-0.onrender.com/api/join_room', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, room_code: roomCode })
